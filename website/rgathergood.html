@@ -1,0 +1,164 @@
+<!doctype html>
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css"/>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+
+<link rel="shortcut icon" href="public/favicon.ico">
+
+<body>
+  <head>
+  <div>
+    <img id=cover src="public/cover.jpg">
+    <html>
+
+        <div id="menu">
+        <ul>
+          <li>
+            <a href="#about" name="top">About</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#experience">Experience</a>
+          </li>
+          <li>
+            <a href="#education">Education</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+
+    <h1 class="name">Rob Gathergood</h1>
+    <h3 class="title">Software Development Student</h3>
+    <a href="https://www.linkedin.com/in/robert-gathergood/" target="_blank">
+    <img id=libutton src="public/linkedIn.png"></a>
+    <a href="https://github.com/rgathergood" target="_blank">
+    <img id=ghbutton src="public/github_icon.png"></a>
+    <button id=cvbtn type="submit" onclick="window.open('public/Current CV RGATHERGOOD 2017.pdf')">Download CV</button>
+  </div>
+ </head>
+
+  <div name="about" class="background2">
+    <h2><a>About</a></h2>
+    <p class="text">Hello! I'm Rob, an aspiring software developer from Scotland. Up until recently I was working as a project manager in the Aerospace/Defence industry after completing my degree in International Business Management. I have now started an intensive 16 week programming bootcamp with <a href="https://codeclan.com/courses/16-week-course/" target="_blank" id=linkTo >CodeClan</a> in Edinburgh.</p>
+  </div>
+
+  <div name="projects" class="background1">
+    <h2><a>Projects</a></h2>
+
+    <div class="gallery">
+      <div class="myProjects">
+      <div class="numbertext">1 / 6</div>
+        <a href="https://github.com/rgathergood/cash_quest_project" target="_blank"><img src="public/project1.jpg"></a>
+    </div>
+
+      <div class="myProjects">
+      <div class="numbertext">2 / 6</div>
+        <a href=""><img src="http://via.placeholder.com/400x150/ffffff"></a>
+    </div>
+
+      <div class="myProjects">
+      <div class="numbertext">3 / 6</div>
+        <a href=""><img src="http://via.placeholder.com/400x150"></a>
+    </div>
+
+      <div class="myProjects">
+      <div class="numbertext">4 / 6</div>
+        <a href=""><img src="http://via.placeholder.com/400x150/ffffff"></a>
+    </div>
+
+      <div class="myProjects">
+      <div class="numbertext">5 / 6</div>
+        <a href=""><img src="http://via.placeholder.com/400x150"></a>
+    </div>
+
+      <div class="myProjects">
+      <div class="numbertext">6 / 6</div>
+        <a href=""><img src="http://via.placeholder.com/400x150/ffffff"></a>
+    </div>
+
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    <div class="caption-container">
+      <p id="caption"></p>
+    </div>
+
+    <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="public/project1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Project 1">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://via.placeholder.com/400x150/ffffff" style="width:100%" onclick="currentSlide(2)" alt="Project 2">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://via.placeholder.com/400x150" style="width:100%" onclick="currentSlide(3)" alt="Project 3">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://via.placeholder.com/400x150/ffffff" style="width:100%" onclick="currentSlide(4)" alt="Project 4">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://via.placeholder.com/400x150" style="width:100%" onclick="currentSlide(5)" alt="Project 5">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="http://via.placeholder.com/400x150/ffffff" style="width:100%" onclick="currentSlide(6)" alt="Project 6">
+    </div>
+  </div>
+</div>
+</div>
+
+  <div name="experience" class="background2">
+    <h2><a>Experience</a></h2>
+    <p class="text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+  </div>
+
+  <div  name="education" class="background1">
+    <h2><a>Education</a></h2>
+    <ul>
+      <li>Edinburgh Napier University - BA Hons International Business Management </li>
+      <li>University of North Texas - Study Abroad Semester</li>
+      <li>Alva Academy</li>
+    </ul>
+  </div>
+
+  <div name="contact" class="background2">
+    <h2><a>Contact</a></h2>
+      <div>
+        <form action="contact.php" method="post">
+          <div>
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="user_name" required>
+          </div>
+          <div>
+            <label for="mail">E-mail:</label>
+            <input type="email" id="mail" name="user_mail" required>
+          </div>
+          <div>
+            <label for="msg">Message:</label>
+            <textarea id="msg" name="user_message" placeholder="Enter your message here" required></textarea>
+          </div>
+          <div class="button">
+            <button type="submit">Send your message</button>
+          </div>
+        </form>
+      </div>
+  </div>
+
+  <footer>
+    <p id=footer> Copyright &copy; 2018 Rob Gathergood<a href=#top id=topbutton>Home</a></p>
+
+  </footer>
+</body>
+
+  <script type="text/javascript" src="script.js"></script>
+
+</html>
