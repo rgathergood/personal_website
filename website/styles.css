@@ -293,6 +293,7 @@ button {
   background-color: lightgray;
   cursor: pointer;
   padding: 4px 5px;
+  margin-top: 10px;
 }
 
 button:hover {
