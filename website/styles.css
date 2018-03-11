@@ -294,6 +294,19 @@ button:hover {
   background-color: orange;
 }
 
+table {
+  text-align: left;
+  margin-top: 30px;
+}
+
+th {
+  padding: 1em;
+}
+
+.tdate {
+  text-align: right;
+  font-style: italic;
+}
 
 #footer {
   background-color: lightgray;
