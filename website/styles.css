@@ -1,3 +1,9 @@
+.container-fluid{
+    padding-left: 0rem;
+    padding-right: 0rem;
+    overflow: hidden;
+}
+
 body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
@@ -296,16 +302,17 @@ button:hover {
 
 table {
   text-align: left;
-  margin-top: 30px;
+  margin-top: 20px;
 }
 
 th {
-  padding: 1em;
+  padding: 2em;
 }
 
 .tdate {
   text-align: right;
   font-style: italic;
+  padding-left: 6em;
 }
 
 #footer {
