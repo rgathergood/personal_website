@@ -1,7 +1,7 @@
 .container-fluid{
-    padding-left: 0rem;
-    padding-right: 0rem;
-    overflow: hidden;
+  padding-left: 0rem;
+  padding-right: 0rem;
+  overflow: hidden;
 }
 
 body {
@@ -10,126 +10,87 @@ body {
   margin: 0;
   padding: 0;
   position: relative;
+  min-width: 480px;
+  width: auto !important;
+  width:1000px; 
 }
 
 section {
   min-height: 100vh -65px;
 }
 
-#menu ul {
-  list-style: none;
-  padding-top:10px;
-  background-color: rgba(255, 255, 255, 0.3);
-  width: 100%;
-  height: 50px;
-  top: 0;
-  position: absolute;
+nav {
+  margin-left: 5em;
+  margin-right: 5em;
 }
 
-#menu li {
-  transition: all 0.8s;
-  display: inline;
-  box-sizing: border-box;
-  padding: 10px 40px 0 40px;
-  margin: 0 10px 30px 10px;
-  font-size: 20px;
-  color: black;
-  opacity: 0.8;
-}
-
-li a:hover {
+nav a:hover {
   box-shadow: 0 3px orange;
   text-decoration: none;
   color: orange;
 }
 
-li a {
-  color:black;
-}
-
-#cover {
-
+.background-image {
+  background: url(images/cover.jpg)no-repeat center center fixed;
+  background-size: cover;
+  background-position: center top;
   width: 100%;
-  opacity: 0.5;
-  position: relative;
+  opacity: 0.9;
   border-bottom: solid 3px rgba(255, 165, 0, 1);
-
-}
-
-.image {
-  position: relative;
-  width: 100%;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
 }
 
 .name {
-  position: absolute;
   width: 100%;
-  text-align: center;
-  top: 230px;
   color: black;
   font-weight: bold;
   opacity: 0.8;
+  padding-top: 3em;
+  padding-bottom: 1em;
 }
 
 .title {
-  position: absolute;
   width: 100%;
-  text-align: center;
-  top: 300px;
   color: black;
   opacity: 0.8;
+  padding-bottom: 1em;
 }
 
 #libutton {
-  position: absolute;
-  align-items: center;
-  height: 100px;
-  width: 100px;
-  top: 370px;
-  left: 46.5%;
-  cursor: pointer;
-  margin: 0;
+  height: auto;
+  max-width: 100%;
+  margin: 1em;
 }
 
 #libutton:hover {
   background-color: orange;
   border-radius: 100%;
-  font-weight: bold;
   opacity: 0.8;
 }
 
 #ghbutton {
-  position: absolute;
-  align-items: center;
-  height: 100px;
-  width: 100px;
-  top: 530px;
-  left: 46.5%;
-  cursor: pointer;
-  margin: 0;
+  height: auto;
+  max-width: 100%;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
 }
 
 #ghbutton:hover {
   background-color: orange;
   border-radius: 100%;
-  font-weight: bold;
   opacity: 0.8;
 }
 
 #cvbtn {
-  position: absolute;
-  align-items: center;
-  top: 710px;
-  left: 46.5%;
-  margin: 0;
-  cursor: pointer;
   background-color: black;
   color: white;
   border-radius:1em;
   padding: 6px 7px;
-  opacity: 0.6;
+  opacity: 0.5;
   border: 1px solid gray;
-
+  margin-top: 2em;
+  margin-bottom: 2em;
 }
 
 #cvbtn:hover {
@@ -154,7 +115,6 @@ li a {
   border-bottom: solid 3px rgba(255, 165, 0, 0.5);
   width: 100%;
   height: 450px;
-  padding: 20px;
   padding: 20px 60px 20px 60px;
   color: black;
 }
@@ -184,6 +144,7 @@ li a {
 
 .myProjects img:hover {
   border: 3px solid orange;
+  border-radius: 7px;
   padding: 0;
   cursor: pointer;
 }
@@ -250,6 +211,7 @@ li a {
 .demo:hover {
   opacity: 1;
   cursor: pointer;
+  border: 3px solid orange;
 }
 
 form {
@@ -339,4 +301,29 @@ th {
   box-shadow: 0 3px orange;
   text-decoration: none;
   color: orange;
+}
+
+/* Large desktops and laptops */
+@media (min-width: 1200px) {
+
+}
+
+/* Landscape tablets and medium desktops */
+@media (min-width: 992px) and (max-width: 1199px) {
+
+}
+
+/* Portrait tablets and small desktops */
+@media (min-width: 768px) and (max-width: 991px) {
+
+}
+
+/* Landscape phones and portrait tablets */
+@media (max-width: 767px) {
+
+}
+
+/* Portrait phones and smaller */
+@media (max-width: 480px) {
+
 }
