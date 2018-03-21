@@ -1,7 +1,7 @@
-// fade out the navbar onscrool
+// fade out the navbar on scroll
 $(function() {
     $(window).scroll(function() {
-      if ($(this).scrollTop() > 150) {
+      if ($(this).scrollTop() > 100) {
         $(".navbar").fadeOut(500);
       } else {
         $(".navbar").fadeIn(500);
@@ -9,6 +9,7 @@ $(function() {
     });
   });
 
+//Slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 
