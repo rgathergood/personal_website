@@ -1,15 +1,3 @@
-// fade out the navbar on scroll
-$(function() {
-  $(window).scroll(function() {
-    if ($(this).scrollTop() > 100) {
-      $(".navbar").fadeOut(500);
-    } else {
-      $(".navbar").fadeIn(500);
-    }
-  });
-});
-
-//Slideshow
 var slideIndex = 1;
 showSlides(slideIndex);
 
@@ -29,10 +17,10 @@ function showSlides(n) {
   if (n > slides.length) {slideIndex = 1}
   if (n < 1) {slideIndex = slides.length}
   for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
+      slides[i].style.display = "none";
   }
   for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
+      dots[i].className = dots[i].className.replace(" active", "");
   }
   slides[slideIndex-1].style.display = "block";
   dots[slideIndex-1].className += " active";
@@ -47,11 +35,11 @@ window.onbeforeunload = function () {
 
 //Smoothscroll//
 $('a[href^="#"]').click(function () {
-  $('html, body').animate({
-    scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
-  }, 500);
+    $('html, body').animate({
+        scrollTop: $('[name="' + $.attr(this, 'href').substr(1) + '"]').offset().top
+    }, 500);
 
-  return false;
+    return false;
 });
 
 //Page fadein//

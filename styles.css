@@ -1,108 +1,118 @@
-.container-fluid{
-  padding-left: 0rem;
-  padding-right: 0rem;
-  overflow: hidden;
-}
-
 body {
   font-family: 'Roboto', sans-serif;
   text-align: center;
   margin: 0;
   padding: 0;
   position: relative;
-  min-width: 100vh;
 }
 
 section {
   min-height: 100vh -65px;
 }
 
-nav {
-  margin-left: 5em;
-  margin-right: 5em;
+#menu ul {
+  list-style: none;
+  padding-top:10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  width: 100%;
+  height: 50px;
+  top: 0;
+  position: absolute;
 }
 
-nav a:hover {
+#menu li {
+  transition: all 0.8s;
+  display: inline;
+  box-sizing: border-box;
+  padding: 10px 40px 0 40px;
+  margin: 0 10px 30px 10px;
+  font-size: 20px;
+  color: black;
+  opacity: 0.8;
+}
+
+li a:hover {
   box-shadow: 0 3px orange;
   text-decoration: none;
   color: orange;
 }
 
-@media screen and (max-width: 700px) {
-  #nav {
-    display: none;
-  }
+li a {
+  color:black;
 }
 
-.background-image {
-  background: url(images/cover.jpg)no-repeat center center fixed;
-  background-size: cover;
-  background-position: center top;
+#cover {
+
   width: 100%;
-  opacity: 0.9;
+  opacity: 0.5;
+  position: relative;
   border-bottom: solid 3px rgba(255, 165, 0, 1);
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+
+}
+
+.image {
+  position: relative;
+  width: 100%;
 }
 
 .name {
+  position: absolute;
   width: 100%;
+  text-align: center;
+  top: 230px;
   color: black;
   font-weight: bold;
   opacity: 0.8;
-  padding-top: 3em;
-  padding-bottom: 1em;
 }
 
 .title {
+  position: absolute;
   width: 100%;
+  text-align: center;
+  top: 300px;
   color: black;
   opacity: 0.8;
-  padding-bottom: 1em;
 }
 
 #libutton {
-  height: auto;
-  max-width: 100%;
-  margin: 1em;
+  position: absolute;
+  align-items: center;
+  height: 100px;
+  width: 100px;
+  top: 375px;
+  left: 46.5%;
+  cursor: pointer;
+  margin: 0;
 }
 
 #libutton:hover {
   background-color: orange;
   border-radius: 100%;
-  opacity: 0.8;
-}
-
-#ghbutton {
-  height: auto;
-  max-width: 100%;
-  margin-top: 1.5em;
-  margin-bottom: 1em;
-}
-
-#ghbutton:hover {
-  background-color: orange;
-  border-radius: 100%;
+  font-weight: bold;
   opacity: 0.8;
 }
 
 #cvbtn {
-  background-color: black;
+  position: absolute;
+  align-items: center;
+  top: 550px;
+  left: 46.5%;
+  margin: 0;
+  cursor: pointer;
+  background-color: gray;
   color: white;
   border-radius:1em;
   padding: 6px 7px;
-  opacity: 0.5;
+  opacity: 0.4;
   border: 1px solid gray;
-  margin-top: 2em;
-  margin-bottom: 2em;
+
 }
 
 #cvbtn:hover {
   background-color: orange;
   border: 1px solid orange;
   color: black;
-  font-weight: bold;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 .background1 {
@@ -111,7 +121,7 @@ nav a:hover {
   width: 100%;
   height: 450px;
   padding: 20px 60px 20px 60px;
-  color: black;
+  color: white;
 }
 
 .background2 {
@@ -119,8 +129,9 @@ nav a:hover {
   border-bottom: solid 3px rgba(255, 165, 0, 0.5);
   width: 100%;
   height: 450px;
+  padding: 20px;
   padding: 20px 60px 20px 60px;
-  color: black;
+  color: lightgray;
 }
 
 .text {
@@ -132,7 +143,7 @@ nav a:hover {
 }
 
 #linkTo:hover {
-  color: orange;
+  color: white;
   text-decoration: none;
   font-weight: bold;
 }
@@ -147,8 +158,7 @@ nav a:hover {
 }
 
 .myProjects img:hover {
-  border: 3px solid orange;
-  border-radius: 7px;
+  border: 3px solid gray;
   padding: 0;
   cursor: pointer;
 }
@@ -175,7 +185,7 @@ nav a:hover {
 
 .prev:hover,
 .next:hover {
-  background-color: orange;
+  background-color: white;
   opacity: 0.6;
 }
 
@@ -215,8 +225,6 @@ nav a:hover {
 .demo:hover {
   opacity: 1;
   cursor: pointer;
-  border: 1px solid orange;
-  border-radius: 5px;
 }
 
 form {
@@ -224,7 +232,7 @@ form {
   margin-top: 40px;
   width: 500px;
   padding: 1em;
-  border: 1px solid orange;
+  border: 1px solid white;
   border-radius: 2em;
 }
 
@@ -242,7 +250,7 @@ input, textarea {
   font: 1em sans-serif;
   width: 300px;
   box-sizing: border-box;
-  border: 1px solid gray;
+  border: 1px solid white;
 }
 
 input:focus, textarea:focus {
@@ -256,29 +264,16 @@ textarea {
 
 button {
   border-radius: 10px;
-  color: white;
+  color: gray;
   background-color: lightgray;
   cursor: pointer;
   padding: 4px 5px;
-  margin-top: 10px;
 }
 
 button:hover {
-  color: black;
-  background-color: orange;
+  color: white;
 }
 
-table {
-  vertical-align: middle;
-  text-align: left;
-  margin-top: 20px;
-}
-
-.tdate {
-  text-align: right;
-  font-style: italic;
-  padding-left: 6em;
-}
 
 #footer {
   background-color: lightgray;
@@ -300,32 +295,7 @@ table {
 }
 
 #topbutton:hover {
-  box-shadow: 0 3px orange;
+  box-shadow: 0 3px white;
   text-decoration: none;
-  color: orange;
-}
-
-/* Large desktops and laptops */
-@media (min-width: 1200px) {
-
-}
-
-/* Landscape tablets and medium desktops */
-@media (min-width: 992px) and (max-width: 1199px) {
-
-}
-
-/* Portrait tablets and small desktops */
-@media (min-width: 768px) and (max-width: 991px) {
-
-}
-
-/* Landscape phones and portrait tablets */
-@media (max-width: 767px) {
-
-}
-
-/* Portrait phones and smaller */
-@media (max-width: 480px) {
-
+  color: white;
 }
