@@ -39,7 +39,6 @@ function showSlides(n) {
   captionText.innerHTML = dots[slideIndex-1].alt;
 }
 
-
 //Scroll to top of page on reload//
 window.onbeforeunload = function () {
   window.scrollTo(0, 0);
