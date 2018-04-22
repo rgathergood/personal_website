@@ -123,14 +123,16 @@ nav a:hover {
   color: black;
 }
 
-/* .text {
-  padding: 20px 100px 20px 100px;
-} */
-
-
+#myface {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border: 3px solid orange;
+  border-radius: 50%;
+  opacity: 0.8;
+}
 
 #linkTo {
-  color: lightgray;
+  color: darkgray;
 }
 
 #linkTo:hover {
